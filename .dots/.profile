@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-        . "$HOME/.bashrc"
+    . "$HOME/.bashrc"
     fi
 fi
 
@@ -25,3 +25,19 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# ----- PROMPT_COMMAND
+# GIT_PS1_SHOWDIRTYSTATE=1
+# GIT_PS1_SHOWUPSTREAM="auto"
+# GIT_PS1_SHOWCOLORHINTS=1
+# GIT_PS1_SHOWSTASHSTATE=1
+# PROMPT_COMMAND='__git_ps1'        # the nifty git branch thingy
+# PROMPT_COMMAND='__git_ps1 "[ \$(date +%T) ] \u@\h:\w" "> "'
+
+# source ~/git-prompt.sh
+# unset PROMPT_COMMAND
+# export PS1='\u@\h: \w$(__git_ps1 " (%s)")> '
+# c_clear='\[\e[0m\]'
+# c_cyan='\[\e[36m\]'
+# kindalightblue=$(tput setaf 123)
+# export PROMPT_COMMAND='history -a; __git_ps1 "${kindalightblue}\u${c_clear}@${kindalightblue}\h${c_clear} : ${c_cyan}\w${c_clear}" "> "'
