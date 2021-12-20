@@ -67,7 +67,6 @@ syntax on
 source ~/.vim/files/eqalignsimple.vim
 
 call plug#begin('~/.vim/plugged')
-    " Plug 'AlessandroYorba/Despacio'
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/fzf' ",     { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'mbbill/undotree',    { 'on': 'UndotreeToggle' }
@@ -81,7 +80,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-dadbod'
     Plug 'tpope/vim-tbone'
     Plug 'tpope/vim-eunuch'
-    Plug 'ghifarit53/tokyonight-vim'
+    Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " Vimwiki
@@ -113,9 +112,7 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 0
 let g:tokyonight_disable_italic_comment = 1
 
-" colorscheme despacio
-" colorscheme darkblue
-colorscheme tokyonight
+colorscheme nord
 
 " FZF
 command! -bang -nargs=? -complete=dir GFiles
