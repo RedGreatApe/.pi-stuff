@@ -82,7 +82,7 @@ compile_prompt () {
   # > Connectbar Down
   # Format:
   #   (newline)(bright colors)(connectbar down)
-  PS1="\n${c_gray}"
+  PS1="${c_gray}"
   PS1+="$CONNECTBAR_DOWN"
 
   # > Username
