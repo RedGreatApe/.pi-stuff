@@ -94,5 +94,6 @@ fi
 
 eval "$(thefuck --alias)"
 
+source ~/.bash_colors
 source ~/.bash_prompt
 compile_prompt
