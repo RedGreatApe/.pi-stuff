@@ -1,0 +1,26 @@
+# save in /etc/udev/hwdb.d/90-custom-keyboard.hwdb
+# might contain some useful codes : /usr/include/linux/input-event-codes.h
+# to reload rules : sudo systemd-hwdb update && sudo udevadm trigger
+# KEYBOARD_KEY_value ( value from evtest )
+# source : https://unix.stackexchange.com/questions/509000
+
+#
+# Mistel Freeboard MD200
+#
+evdev:input:b*v04D9p0200*
+KEYBOARD_KEY_70053=12 # numlock
+KEYBOARD_KEY_70054=13 # /
+KEYBOARD_KEY_70055=14 # *
+KEYBOARD_KEY_70056=15 # -
+KEYBOARD_KEY_70057=ESC # +
+KEYBOARD_KEY_70058=esc # enter
+KEYBOARD_KEY_70059=f1
+KEYBOARD_KEY_7005a=f2
+KEYBOARD_KEY_7005b=f3
+KEYBOARD_KEY_7005c=f4
+KEYBOARD_KEY_7005d=f5
+KEYBOARD_KEY_7005e=f6
+KEYBOARD_KEY_7005f=f7
+KEYBOARD_KEY_70060=f8
+KEYBOARD_KEY_70061=f9
+KEYBOARD_KEY_70062=f10
